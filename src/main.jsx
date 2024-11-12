@@ -6,16 +6,16 @@ import {
 } from "react-router-dom";
 
 import "./index.css";
-import Root from "./App.jsx";
 import ErrorPage from "./ErrorPage";
 import { FontDisplay } from "./Pages/FontDisplay.jsx";
 import { Typescale } from "./Pages/TypeScale.jsx";
+import App from "./App.jsx";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <App />,
     errorElement: <ErrorPage />,
     children: [
       {
@@ -26,8 +26,9 @@ const router = createBrowserRouter([
         path: "/typescale",
         element: <Typescale />,
       }
-    ]
-  },
+    ],
+    basename: "/typescale/"
+  }
   
 ]);
 

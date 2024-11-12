@@ -1,6 +1,9 @@
 import { Outlet } from "react-router-dom";
 import "./App.css";
-export default function Root() {
+
+import {dogphoto} from "/img/dog-flower.jpg";
+
+export default function App() {
     return (
       <>
       {/* sidebar */}
@@ -37,6 +40,7 @@ export default function Root() {
 
         {/* main body */}
         <div id="body" className="body">
+          <img src={dogphoto} />         
           <Outlet />
         </div>
       </>
