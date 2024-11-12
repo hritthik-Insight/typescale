@@ -1,0 +1,21 @@
+.div1{
+    font-family: var(--ff-klinic-book);
+    color: var(--clr-primary);
+  }
+  
+  .div2{
+    font-family: var(--ff-klinic-medium);
+    color: var(--clr-primary);
+  }
+  
+  .div3{
+    font-family: var(--ff-allumi-reg);
+  }
+  
+  .div4{
+    font-family: var(--ff-allumi-bold); 
+  }
+  
+  .div5{
+    font-family: var(--ff-allumi-demi);
+  }
