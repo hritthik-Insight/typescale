@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";  
+import { Outlet, NavLink } from "react-router-dom";  
 import "./App.css";  
 
   
@@ -24,14 +24,18 @@ export default function App() {
               hidden={true}  
             />  
           </form>  
+          
         </div>  
         <nav>  
           <ul>  
+          <li>
+            <NavLink to={`/`} >Home</NavLink>
+          </li>
             <li>  
-              <a href={`/FontDisplay`}>Font Display</a>  
+              <NavLink to={`/FontDisplay`}>Font Display</NavLink>  
             </li>  
             <li>  
-              <a href={`/Typescale`}>Typescale</a>  
+              <NavLink to={`/Typescale`}>Typescale</NavLink>  
             </li>  
           </ul>  
         </nav>  

@@ -62,7 +62,7 @@ body {
   height: 100%;
   margin: 0;
   line-height: 1.5;
-  color: #121212;
+  color: var(--clr-text-primary);
 
 }
 textarea,
@@ -71,15 +71,22 @@ button {
   font-size: 1rem;
   font-family: inherit;
   border: none;
-  border-radius: 8px;
+  border-radius: 0px;
   padding: 0.5rem 0.75rem;
   box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.2), 0 1px 2px hsla(0, 0%, 0%, 0.2);
   background-color: white;
   line-height: 1.5;
   margin: 0;
 }
+
+input:focus-visible{
+  outline-color: var(--clr-primary);
+  border-radius: 0px;
+}
+
+
 button {
-  color: #3992ff;
+  color: var(--clr-primary);
   font-weight: 500;
 }
 
@@ -93,7 +100,7 @@ button:hover {
 
 
 form[action$="destroy"] button {
-  color: #f44250;
+  color: var(--clr-error);
 }
 
 
@@ -105,8 +112,8 @@ form[action$="destroy"] button {
 
 #sidebar {
   width: 20%;
-  background-color: #f7f7f7;
-  border-right: solid 1px #e3e3e3;
+  background-color: var(--clr-bg-primary);
+  border-right: solid 1px var(--clr-linework);
   display: flex;
   flex-direction: column;
   height: 100dvh;
@@ -142,7 +149,7 @@ form[action$="destroy"] button {
   gap: 0.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #e3e3e3;
+  border-bottom: 1px solid var(--clr-linework);
 }
 
 #sidebar > div form {
@@ -202,24 +209,25 @@ i {
   overflow: hidden;
 
   white-space: pre;
-  padding: 0.5rem;
-  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  border-radius: 0px;
   color: inherit;
   text-decoration: none;
   gap: 1rem;
 }
 
 #sidebar nav a:hover {
-  background: #e3e3e3;
+  background: var(--clr-bg-hover);
+  color: var(--clr-primary);
 }
 
 #sidebar nav a.active {
-  background: hsl(224, 98%, 58%);
+  background: var(--clr-primary);
   color: white;
 }
 
 #sidebar nav a.pending {
-  color: hsl(224, 98%, 58%);
+  color: var(--clr-primary);
 }
 
 

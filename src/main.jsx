@@ -16,20 +16,24 @@ import DogImage from "./Pages/DogImage.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
+    exact: true,
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
         element: <DogImage />,
+        errorElement: <ErrorPage />,
       },
       {
         path: "/fontdisplay",
         element: <FontDisplay />,
+        errorElement: <ErrorPage />,
       },
       {
         path: "/typescale",
         element: <Typescale />,
+        errorElement: <ErrorPage />,
       }
     ],
     basename: "/"
