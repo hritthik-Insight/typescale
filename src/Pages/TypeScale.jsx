@@ -1,4 +1,4 @@
-import "./Typescale.css";
+import "./TypeScale.css";
 
 
 export const Typescale = () => {
