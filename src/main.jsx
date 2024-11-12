@@ -10,6 +10,7 @@ import ErrorPage from "./ErrorPage";
 import { FontDisplay } from "./Pages/FontDisplay.jsx";
 import { Typescale } from "./Pages/TypeScale.jsx";
 import App from "./App.jsx";
+import DogImage from "./Pages/DogImage.jsx";
 
 
 const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
+        path: "/",
+        element: <DogImage />,
+      },
+      {
         path: "/fontdisplay",
         element: <FontDisplay />,
       },
@@ -27,7 +32,7 @@ const router = createBrowserRouter([
         element: <Typescale />,
       }
     ],
-    basename: "/typescale/"
+    basename: "/"
   }
   
 ]);
